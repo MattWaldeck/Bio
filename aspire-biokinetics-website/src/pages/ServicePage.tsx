@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import data from '../data/content.json';
 
 const CheckCircleIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
@@ -28,10 +29,20 @@ const slugify = (text: string) =>
 
 const ServicesPage: React.FC = () => {
   const { services } = data;
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const elem = document.getElementById(location.hash.slice(1));
+      if (elem) {
+        elem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  }, [location.hash]);
 
   return (
     <div className="bg-white">
-      <section id="services" className="py-20 lg:py-28">
+      <section className="py-20 lg:py-28">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl lg:text-5xl font-bold text-brand-blue mb-6">
@@ -40,11 +51,10 @@ const ServicesPage: React.FC = () => {
           </div>
           <div className="mt-16 space-y-20">
             {services.categories.map((category) => (
-              // --- ADDED ID TO THIS DIV ---
               <div
                 key={category.title}
-                id={slugify(category.title)} // This ID is the target for our dropdown links
-                className="bg-brand-light p-8 lg:p-12 rounded-lg shadow-lg scroll-mt-24" // scroll-mt adds top margin when jumping to the ID
+                id={slugify(category.title)}
+                className="bg-brand-light p-8 lg:p-12 rounded-lg shadow-lg"
               >
                 <h2 className="text-3xl font-bold text-brand-teal mb-2">
                   {category.title}

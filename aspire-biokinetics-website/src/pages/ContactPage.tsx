@@ -76,7 +76,7 @@ const ContactPage: React.FC = () => {
             {/* Map */}
             <div className="rounded-lg overflow-hidden shadow-xl h-full min-h-[450px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.261899558114!2d18.61809381521128!3d-33.9086509806449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc51a4a0418379%3A0x3451a76c62d04746!2sBella%20Rosa%20Lifestyle%20Centre!5e0!3m2!1sen!2sza!4v1678886053302!5m2!1sen!2sza"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.028670154865!2d18.61833081521198!3d-33.86944098064272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5a1e2f17e0e9%3A0x8c7c9c0f9a4b0f9c!2sBella%20Rosa%20Lifestyle%20Centre!5e0!3m2!1sen!2sza!4v1626875432109!5m2!1sen!2sza"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

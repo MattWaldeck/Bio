@@ -63,7 +63,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* --- INTRO SECTION --- */}
-      <section className="py-20 lg:py-28">
+      <section className="py-20 lg:py-28 scroll-mt-20" id="intro">
         <div className="container mx-auto px-6 text-center max-w-3xl">
           <h2 className="text-4xl font-bold text-brand-blue mb-4">
             {intro.title}
@@ -72,8 +72,11 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* --- SERVICES PREVIEW --- */}
-      <section className="py-20 lg:py-28 bg-brand-light">
+      {/* --- SERVICES PREVIEW (UPDATED) --- */}
+      <section
+        className="py-20 lg:py-28 bg-brand-light scroll-mt-20"
+        id="services"
+      >
         <div className="container mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-brand-blue mb-4">
@@ -89,25 +92,23 @@ const HomePage: React.FC = () => {
               <Link
                 key={category.title}
                 to="/services"
-                className="bg-white p-8 rounded-lg shadow-lg flex flex-col text-center hover:bg-brand-blue transition-all duration-300 group"
+                className="bg-white p-8 rounded-lg shadow-lg flex flex-col text-center transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl"
               >
-                <h3 className="text-xl font-bold text-brand-teal uppercase tracking-wider group-hover:text-white">
+                <h3 className="text-xl font-bold text-brand-teal uppercase tracking-wider">
                   {category.title}
                 </h3>
-                <p className="text-gray-500 mb-6 font-light group-hover:text-gray-200">
+                <p className="text-gray-500 mb-6 font-light">
                   {category.subtitle}
                 </p>
                 <ul className="space-y-2 flex-grow text-left">
                   {category.items.slice(0, 3).map((item) => (
                     <li key={item} className="flex items-center">
-                      <CheckCircleIcon className="w-5 h-5 text-brand-teal mr-3 flex-shrink-0 group-hover:text-white" />
-                      <span className="text-gray-700 group-hover:text-white">
-                        {item}
-                      </span>
+                      <CheckCircleIcon className="w-5 h-5 text-brand-teal mr-3 flex-shrink-0" />
+                      <span className="text-gray-700">{item}</span>
                     </li>
                   ))}
                 </ul>
-                <div className="mt-6 font-bold text-brand-teal group-hover:text-white self-center">
+                <div className="mt-6 font-bold text-brand-teal self-center">
                   Learn More &rarr;
                 </div>
               </Link>
@@ -117,7 +118,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* --- CONDITIONS WE TREAT --- */}
-      <section className="py-20 lg:py-28">
+      <section className="py-20 lg:py-28 scroll-mt-20" id="conditions">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-brand-blue mb-4">

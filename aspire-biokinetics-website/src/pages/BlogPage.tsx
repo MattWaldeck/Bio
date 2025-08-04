@@ -20,7 +20,7 @@ const BlogPage: React.FC = () => {
           {blog.posts.map((post) => (
             <div
               key={post.id}
-              className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2"
             >
               <h2 className="text-2xl font-bold text-brand-teal mb-2">
                 <Link to={`/blog/${post.id}`} className="hover:underline">

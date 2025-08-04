@@ -8,7 +8,8 @@ import ServicesPage from './pages/ServicePage';
 import TestimonialsPage from './pages/TestimonialsPage';
 import BlogPage from './pages/BlogPage';
 import SinglePostPage from './pages/SinglePostPage';
-import RatesPage from './pages/RatesPage'; // <-- IMPORT NEW RATES PAGE
+import RatesPage from './pages/RatesPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage'; // <-- IMPORT NEW PRIVACY POLICY PAGE
 
 const App: React.FC = () => {
   return (
@@ -22,8 +23,9 @@ const App: React.FC = () => {
           <Route path="testimonials" element={<TestimonialsPage />} />
           <Route path="blog" element={<BlogPage />} />
           <Route path="blog/:postId" element={<SinglePostPage />} />
-          <Route path="rates" element={<RatesPage />} />{' '}
-          {/* <-- ADD RATES ROUTE */}
+          <Route path="rates" element={<RatesPage />} />
+          <Route path="privacy-policy" element={<PrivacyPolicyPage />} />{' '}
+          {/* <-- ADD PRIVACY POLICY ROUTE */}
         </Route>
       </Routes>
     </BrowserRouter>
