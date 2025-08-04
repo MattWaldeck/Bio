@@ -2,43 +2,49 @@
   "contact": {
     "phone": "082 893 4028",
     "email": "aspirebiokinetics@gmail.com",
-    "address": "Bella Rosa Lifestyle Centre, Bella Rosa St, Rosendal, Cape Town, 7550"
+    "address": "Bella Rosa Lifestyle Centre, Bella Rosa St, Rosendal, Cape Town, 7550",
+    "hours": "Mon - Fri: 7am - 6pm"
   },
   "navigation": [
-    { "name": "Home", "href": "#home" },
-    { "name": "About", "href": "#about" },
-    { "name": "Services", "href": "#services" },
-    { "name": "Testimonials", "href": "#testimonials" },
-    { "name": "Contact", "href": "#contact" }
+    { "name": "Home", "to": "/" },
+    { "name": "About", "to": "/about" },
+    { "name": "Services", "to": "/services" },
+    { "name": "Rates", "to": "/rates" },
+    { "name": "Testimonials", "to": "/testimonials" },
+    { "name": "Blog", "to": "/blog" },
+    { "name": "Contact", "to": "/contact" }
   ],
   "hero": {
-    "title": "Aspire Biokinetics",
-    "subtitle": "Restore. Strengthen. Perform.",
-    "tagline": "Your health is our priority."
+    "imageUrl": "/public/images/rehab.jpg",
+    "title": "Empower Your Path to Optimal Health and Well-Being",
+    "subtitle": "With a focus on advanced exercise therapy and rehabilitation techniques, we help you achieve your health goals and lead a more active, fulfilling life. Join us on your journey to optimal health and well-being.",
+    "ctaButtons": [
+      {
+        "text": "View Our Services",
+        "to": "/services"
+      },
+      {
+        "text": "Book a Consultation >",
+        "to": "/contact"
+      }
+    ]
   },
   "intro": {
     "title": "What is Biokinetics?",
-    "text": "Biokinetics is the science of movement and the application of exercise in rehabilitative treatment or performance enhancement. It's about improving physical functioning and quality of life through individualized scientific assessment and the prescription of exercise.",
-    "benefitsTitle": "How Can You Benefit?",
-    "benefits": [
-      "Improved muscle strength and endurance.",
-      "Enhanced mobility, flexibility, and posture.",
-      "Effective management of chronic conditions.",
-      "Reduced risk of injury and faster recovery.",
-      "Enhanced sporting performance.",
-      "Better overall physical and mental wellness."
-    ]
+    "text": "Biokinetics is the science of movement and the application of exercise in rehabilitative treatment or performance enhancement. It's about improving physical functioning and quality of life through individualized scientific assessment and the prescription of exercise."
   },
   "about": {
     "title": "Meet the Team",
     "team": [
       {
         "name": "Nicole",
-        "bio": "Nicole is a passionate biokineticist with a special interest in orthopaedic rehabilitation and chronic disease management. She believes in a holistic approach to health, empowering her patients to take control of their well-being through movement."
+        "bio": "Nicole is a passionate biokineticist with a special interest in orthopaedic rehabilitation and chronic disease management. She believes in a holistic approach to health, empowering her patients to take control of their well-being through movement.",
+        "imageUrl": "/public/nicole waldeck.jpeg"
       },
       {
         "name": "Jhana",
-        "bio": "Jhana focuses on high-performance training and sports science. With a background in competitive sports, she is dedicated to helping athletes of all levels reach their peak potential, prevent injuries, and achieve their performance goals."
+        "bio": "Jhana focuses on high-performance training and sports science. With a background in competitive sports, she is dedicated to helping athletes of all levels reach their peak potential, prevent injuries, and achieve their performance goals.",
+        "imageUrl": "https://via.placeholder.com/150"
       }
     ]
   },
@@ -52,7 +58,9 @@
           "Biokinetics Assessment",
           "VALD Performance Testing",
           "Sports & High Performance Testing",
-          "Vitality Fitness Assessment"
+          "Vitality Fitness Assessment",
+          "Discovery Vitality",
+          "Momentum Multiply"
         ]
       },
       {
@@ -60,6 +68,7 @@
         "subtitle": "Recovery, Strength & Resilience",
         "items": [
           "Orthopaedic Rehabilitation",
+          "Pre- & Post-Operative Rehabilitation",
           "Chronic Pain Management",
           "Performance Training",
           "Seniors & Children Programmes"
@@ -71,9 +80,33 @@
         "items": [
           "General Fitness & Wellness",
           "Stress & Psychological Wellness",
-          "Pregnancy Exercise Programmes"
+          "Pregnancy Exercise Programmes",
+          "Corporate Wellness"
         ]
       }
+    ]
+  },
+  "conditions": {
+    "title": "Conditions We Treat",
+    "items": [
+      "Low Back Pain",
+      "Neck Pain",
+      "Shoulder Injuries",
+      "Hip & Knee Pain",
+      "Ankle & Foot Pain",
+      "Arthritis",
+      "Osteoporosis",
+      "Sports Injuries"
+    ]
+  },
+  "rates": {
+    "title": "Our Rates",
+    "subtitle": "We are contracted with most medical aids.",
+    "items": [
+      { "name": "Initial Assessment", "price": "R600" },
+      { "name": "Follow-up Session", "price": "R550" },
+      { "name": "Group Session", "price": "R300" },
+      { "name": "Vitality Fitness Assessment", "price": "R450" }
     ]
   },
   "testimonials": {
@@ -86,10 +119,6 @@
       {
         "quote": "Incredibly knowledgeable and supportive. I've seen huge improvements in my performance and overall health since I started.",
         "author": "A. Williams"
-      },
-      {
-        "quote": "A truly professional and caring environment. They helped me manage my chronic pain and gave me my quality of life back.",
-        "author": "M. Brown"
       }
     ]
   },
@@ -105,21 +134,63 @@
         "content": "Orthopaedic rehabilitation is a specialized field focused on restoring function and mobility after an injury or surgery. At Aspire, our approach is centered on creating a personalized exercise plan that not only addresses the immediate injury but also strengthens surrounding muscles to prevent future issues. We work with you every step of the way, from initial assessment to full recovery, ensuring you can return to your daily activities with confidence."
       },
       {
-        "id": "enhancing-athletic-performance",
-        "title": "5 Key Strategies for Enhancing Athletic Performance",
+        "id": "maximizing-athletic-potential-vald",
+        "title": "Maximizing Athletic Potential with VALD Performance Testing",
         "author": "Jhana",
-        "date": "2024-07-22",
-        "summary": "Learn how sports science and biomechanical analysis can help you reach your peak potential, prevent injuries, and achieve your goals.",
-        "content": "For athletes, peak performance is a combination of strength, technique, and mental focus. Our sport science services utilize biomechanical analysis to identify inefficiencies in your movement, allowing us to create training programs that enhance your power and endurance. We also focus on injury prevention and recovery strategies, because staying healthy is just as important as training hard."
+        "date": "2024-08-05",
+        "summary": "Discover how VALD Performance Testing provides objective data to tailor your training, minimize injury risk, and unlock your true athletic capabilities.",
+        "content": "In the world of high-performance sport, data is king. VALD Performance Testing technology gives us precise, objective measurements of strength, balance, and movement patterns. This data allows us, as biokineticists, to identify subtle imbalances and weaknesses before they lead to injury. We can then create hyper-personalized training programs to enhance your performance, track your progress accurately, and ensure you're training smarter, not just harder."
       },
       {
-        "id": "managing-chronic-pain-through-movement",
-        "title": "Managing Chronic Pain Through Movement",
+        "id": "biokinetics-for-chronic-pain",
+        "title": "Beyond the Pain: How Biokinetics Manages Chronic Conditions",
         "author": "Nicole",
-        "date": "2024-08-01",
-        "summary": "Discover how biokinetics offers an effective, non-invasive approach to managing chronic conditions and improving your overall well-being.",
-        "content": "Living with chronic pain can be debilitating, but movement is a powerful tool for managing symptoms and improving quality of life. Our chronic pain management programs are designed to gently reintroduce movement, reduce stiffness, and build strength in a controlled and supportive environment. By focusing on what you *can* do, we help you regain control and find relief."
+        "date": "2024-08-19",
+        "summary": "Living with chronic pain can be debilitating. Learn how a structured exercise program from a biokineticist can improve mobility, reduce pain, and restore your quality of life.",
+        "content": "Chronic pain often leads to a cycle of inactivity, which can worsen the condition. Biokinetics breaks this cycle by using movement as medicine. We design gentle, progressive exercise programs that focus on improving joint stability, increasing muscle strength, and enhancing overall function. By teaching your body to move correctly and efficiently again, we can significantly reduce pain levels and empower you to manage your condition effectively."
+      },
+      {
+        "id": "pre-post-operative-rehab",
+        "title": "Your Surgical Journey: The Role of Pre- and Post-Operative Rehab",
+        "author": "Nicole",
+        "date": "2024-09-02",
+        "summary": "Heading for surgery? Discover why engaging with a biokineticist both before (pre-hab) and after (rehab) your operation is crucial for a faster, more successful recovery.",
+        "content": "A successful surgery is only half the battle; the recovery process is just as important. 'Pre-hab' involves strengthening your body *before* the operation, which has been shown to improve surgical outcomes and speed up recovery. Post-operative rehabilitation is then essential to safely restore range of motion, rebuild strength, and guide you back to full function. We work closely with your surgeon's protocols to ensure a smooth and effective healing journey."
+      },
+      {
+        "id": "preventing-common-sports-injuries",
+        "title": "5 Common Sports Injuries and How a Biokineticist Can Help",
+        "author": "Jhana",
+        "date": "2024-09-16",
+        "summary": "From runner's knee to rotator cuff strains, many sports injuries are preventable. We explore five common injuries and the key biokinetic principles to keep you in the game.",
+        "content": "Ankle sprains, ACL tears, hamstring strains, tennis elbow, and low back pain are all too common among athletes. The root cause is often a combination of muscle imbalances, poor movement mechanics, and inadequate conditioning. A biokineticist can perform a thorough assessment to identify your specific risk factors. We then prescribe corrective exercises and sport-specific conditioning to build a more resilient body, helping you perform at your best while staying injury-free."
+      },
+      {
+        "id": "exercise-during-pregnancy",
+        "title": "Staying Active and Strong: A Guide to Safe Exercise During Pregnancy",
+        "author": "Nicole",
+        "date": "2024-09-30",
+        "summary": "Exercise during pregnancy offers numerous benefits for both mother and baby. Learn how a biokineticist can create a safe and effective fitness plan for this special time.",
+        "content": "Maintaining an active lifestyle during pregnancy can help manage weight gain, reduce back pain, improve mood, and prepare your body for labour. However, it's crucial to exercise safely. A biokineticist can guide you through appropriate modifications for each trimester, focusing on core stability, pelvic floor health, and maintaining cardiovascular fitness. We create personalized programs that adapt to your changing body, ensuring a healthy and comfortable pregnancy journey."
       }
+    ]
+  },
+  "socialMedia": [
+    { "name": "Facebook", "url": "https://www.facebook.com" },
+    { "name": "Instagram", "url": "https://www.instagram.com" }
+  ],
+  "footer": {
+    "aboutUs": "We are dedicated to improving your quality of life through specialized exercise therapy and rehabilitation. Our team focuses on restoring optimal function and well-being, whether you're recovering from an injury, managing chronic pain, or preparing for surgery.",
+    "quickLinks": [
+      { "name": "Home", "to": "/" },
+      { "name": "About Us", "to": "/about" },
+      { "name": "Our Services", "to": "/services" },
+      { "name": "Book a Consultation", "to": "/contact" }
+    ],
+    "importantLinks": [
+      { "name": "News", "to": "/blog" },
+      { "name": "Privacy Policy", "to": "/privacy-policy" },
+      { "name": "Contact Us", "to": "/contact" }
     ]
   }
 }

@@ -6,9 +6,9 @@ import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicePage';
 import TestimonialsPage from './pages/TestimonialsPage';
-// --- IMPORT NEW BLOG PAGES ---
 import BlogPage from './pages/BlogPage';
 import SinglePostPage from './pages/SinglePostPage';
+import RatesPage from './pages/RatesPage'; // <-- IMPORT NEW RATES PAGE
 
 const App: React.FC = () => {
   return (
@@ -20,9 +20,10 @@ const App: React.FC = () => {
           <Route path="about" element={<AboutPage />} />
           <Route path="services" element={<ServicesPage />} />
           <Route path="testimonials" element={<TestimonialsPage />} />
-          {/* --- ADD BLOG ROUTES --- */}
           <Route path="blog" element={<BlogPage />} />
           <Route path="blog/:postId" element={<SinglePostPage />} />
+          <Route path="rates" element={<RatesPage />} />{' '}
+          {/* <-- ADD RATES ROUTE */}
         </Route>
       </Routes>
     </BrowserRouter>

@@ -147,7 +147,7 @@ const Header: React.FC = () => {
         <div className="hidden md:block">
           <Link
             to="/contact"
-            className="bg-brand-teal text-white font-bold py-2 px-5 rounded-lg hover:bg-brand-blue transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+            className="bg-brand-teal text-black font-bold py-2 px-5 rounded-lg hover:bg-brand-blue transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
           >
             Book Now
           </Link>

@@ -17,8 +17,13 @@ const AboutPage: React.FC = () => {
             {about.team.map((member) => (
               <div
                 key={member.name}
-                className="bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+                className="bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center text-center"
               >
+                <img
+                  src={member.imageUrl}
+                  alt={member.name}
+                  className="w-32 h-32 rounded-full mb-6 object-cover"
+                />
                 <h3 className="text-2xl font-bold text-brand-teal mb-4">
                   {member.name}
                 </h3>
