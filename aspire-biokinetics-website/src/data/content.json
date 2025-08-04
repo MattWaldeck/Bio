@@ -1,0 +1,96 @@
+{
+  "contact": {
+    "phone": "082 893 4028",
+    "email": "aspirebiokinetics@gmail.com",
+    "address": "Bella Rosa Lifestyle Centre, Bella Rosa St, Rosendal, Cape Town, 7550"
+  },
+  "navigation": [
+    { "name": "Home", "href": "#home" },
+    { "name": "About", "href": "#about" },
+    { "name": "Services", "href": "#services" },
+    { "name": "Testimonials", "href": "#testimonials" },
+    { "name": "Contact", "href": "#contact" }
+  ],
+  "hero": {
+    "title": "Aspire Biokinetics",
+    "subtitle": "Restore. Strengthen. Perform.",
+    "tagline": "Your health is our priority."
+  },
+  "intro": {
+    "title": "What is Biokinetics?",
+    "text": "Biokinetics is the science of movement and the application of exercise in rehabilitative treatment or performance enhancement. It's about improving physical functioning and quality of life through individualized scientific assessment and the prescription of exercise.",
+    "benefitsTitle": "How Can You Benefit?",
+    "benefits": [
+      "Improved muscle strength and endurance.",
+      "Enhanced mobility, flexibility, and posture.",
+      "Effective management of chronic conditions.",
+      "Reduced risk of injury and faster recovery.",
+      "Enhanced sporting performance.",
+      "Better overall physical and mental wellness."
+    ]
+  },
+  "about": {
+    "title": "Meet the Team",
+    "team": [
+      {
+        "name": "Nicole",
+        "bio": "Nicole is a passionate biokineticist with a special interest in orthopaedic rehabilitation and chronic disease management. She believes in a holistic approach to health, empowering her patients to take control of their well-being through movement."
+      },
+      {
+        "name": "Jhana",
+        "bio": "Jhana focuses on high-performance training and sports science. With a background in competitive sports, she is dedicated to helping athletes of all levels reach their peak potential, prevent injuries, and achieve their performance goals."
+      }
+    ]
+  },
+  "services": {
+    "title": "Our Services",
+    "categories": [
+      {
+        "title": "Assessments & Testing",
+        "subtitle": "Objective Evaluation & Performance Analysis",
+        "items": [
+          "Biokinetics Assessment",
+          "VALD Performance Testing",
+          "Sports & High Performance Testing",
+          "Vitality Fitness Assessment"
+        ]
+      },
+      {
+        "title": "Rehabilitation & Conditioning",
+        "subtitle": "Recovery, Strength & Resilience",
+        "items": [
+          "Orthopaedic Rehabilitation",
+          "Chronic Pain Management",
+          "Performance Training",
+          "Seniors & Children Programmes"
+        ]
+      },
+      {
+        "title": "Wellness & Lifestyle",
+        "subtitle": "Whole-Person Health & Functional Wellbeing",
+        "items": [
+          "General Fitness & Wellness",
+          "Stress & Psychological Wellness",
+          "Pregnancy Exercise Programmes"
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "reviews": [
+      {
+        "quote": "The team at Aspire completely changed my approach to fitness and recovery. Their personalized program was exactly what I needed after my injury.",
+        "author": "J. Smith"
+      },
+      {
+        "quote": "Incredibly knowledgeable and supportive. I've seen huge improvements in my performance and overall health since I started.",
+        "author": "A. Williams"
+      },
+      {
+        "quote": "A truly professional and caring environment. They helped me manage my chronic pain and gave me my quality of life back.",
+        "author": "M. Brown"
+      }
+    ]
+  }
+}
