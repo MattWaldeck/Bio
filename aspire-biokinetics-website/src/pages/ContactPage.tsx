@@ -4,42 +4,59 @@ import data from '../data/content.json';
 const ContactPage: React.FC = () => {
   const { contact } = data;
   return (
-    <section id="contact" className="py-20 bg-white">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-cyan-800 text-center mb-12">
-          Get In Touch
-        </h2>
-        <div className="bg-gray-50 p-8 md:p-12 rounded-lg shadow-lg max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-1 gap-12">
-            <div>
-              <h3 className="text-2xl font-bold text-cyan-800 mb-4">
+    <div className="bg-brand-light">
+      <section id="contact" className="py-20 lg:py-28">
+        <div className="container mx-auto px-6">
+          <div className="text-center max-w-3xl mx-auto">
+            <h1 className="text-4xl lg:text-5xl font-bold text-brand-blue mb-4">
+              Get In Touch
+            </h1>
+            <p className="text-lg text-gray-600">
+              We're here to help you on your journey to better health. Reach out
+              to us today!
+            </p>
+          </div>
+
+          <div className="mt-16 grid lg:grid-cols-2 gap-12 items-start">
+            {/* Contact Info */}
+            <div className="bg-white p-8 lg:p-12 rounded-lg shadow-xl">
+              <h3 className="text-2xl font-bold text-brand-blue mb-6">
                 Contact Details
               </h3>
-              <p className="text-gray-600 mb-2 text-lg">
-                <strong>Phone:</strong>{' '}
-                <a
-                  href={`tel:${contact.phone.replace(/\s/g, '')}`}
-                  className="hover:text-cyan-700"
-                >
-                  {contact.phone}
-                </a>
-              </p>
-              <p className="text-gray-600 mb-2 text-lg">
-                <strong>Email:</strong>{' '}
+              <div className="space-y-4">
+                <p className="flex items-center text-lg">
+                  <strong className="w-24 font-semibold text-gray-500">
+                    Phone:
+                  </strong>{' '}
+                  <a
+                    href={`tel:${contact.phone.replace(/\s/g, '')}`}
+                    className="text-brand-teal hover:underline"
+                  >
+                    {contact.phone}
+                  </a>
+                </p>
+                <p className="flex items-center text-lg">
+                  <strong className="w-24 font-semibold text-gray-500">
+                    Email:
+                  </strong>{' '}
+                  <a
+                    href={`mailto:${contact.email}`}
+                    className="text-brand-teal hover:underline"
+                  >
+                    {contact.email}
+                  </a>
+                </p>
+                <p className="flex items-start text-lg">
+                  <strong className="w-24 font-semibold text-gray-500 flex-shrink-0">
+                    Address:
+                  </strong>{' '}
+                  <span className="text-gray-700">{contact.address}</span>
+                </p>
+              </div>
+              <div className="mt-8 border-t pt-8">
                 <a
                   href={`mailto:${contact.email}`}
-                  className="hover:text-cyan-700"
-                >
-                  {contact.email}
-                </a>
-              </p>
-              <p className="text-gray-600 mb-6 text-lg">
-                <strong>Address:</strong> {contact.address}
-              </p>
-              <div className="mt-6">
-                <a
-                  href={`mailto:${contact.email}`}
-                  className="bg-cyan-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-cyan-800 transition-colors duration-300 inline-block mr-4 mb-4"
+                  className="bg-brand-teal text-white font-bold py-3 px-6 rounded-lg hover:bg-brand-blue transition-all duration-300 inline-block mr-4 mb-4 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                 >
                   Email Us
                 </a>
@@ -49,32 +66,29 @@ const ContactPage: React.FC = () => {
                     .replace('0', '27')}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition-colors duration-300 inline-block"
+                  className="bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition-all duration-300 inline-block shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                 >
                   WhatsApp Us
                 </a>
               </div>
-              <div className="mt-8">
-                <h3 className="text-2xl font-bold text-cyan-800 mb-4">
-                  Our Location
-                </h3>
-                <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-md">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.332341999285!2d18.61868487635924!3d-33.88085317322044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc507e1e694509%3A0x29c73b446c590669!2sBella%20Rosa%20Lifestyle%20Centre!5e0!3m2!1sen!2sza!4v1722858971034!5m2!1sen!2sza"
-                    width="100%"
-                    height="450"
-                    style={{ border: 0 }}
-                    allowFullScreen={true}
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </div>
-              </div>
+            </div>
+
+            {/* Map */}
+            <div className="rounded-lg overflow-hidden shadow-xl h-full min-h-[450px]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.261899558114!2d18.61809381521128!3d-33.9086509806449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc51a4a0418379%3A0x3451a76c62d04746!2sBella%20Rosa%20Lifestyle%20Centre!5e0!3m2!1sen!2sza!4v1678886053302!5m2!1sen!2sza"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
