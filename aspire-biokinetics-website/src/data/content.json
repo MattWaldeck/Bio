@@ -92,5 +92,34 @@
         "author": "M. Brown"
       }
     ]
+  },
+  "blog": {
+    "title": "Health & Wellness Insights",
+    "posts": [
+      {
+        "id": "understanding-orthopaedic-rehab",
+        "title": "Understanding Orthopaedic Rehabilitation",
+        "author": "Nicole",
+        "date": "2024-07-15",
+        "summary": "A deep dive into how targeted exercises can help you recover from musculoskeletal injuries and improve your quality of life.",
+        "content": "Orthopaedic rehabilitation is a specialized field focused on restoring function and mobility after an injury or surgery. At Aspire, our approach is centered on creating a personalized exercise plan that not only addresses the immediate injury but also strengthens surrounding muscles to prevent future issues. We work with you every step of the way, from initial assessment to full recovery, ensuring you can return to your daily activities with confidence."
+      },
+      {
+        "id": "enhancing-athletic-performance",
+        "title": "5 Key Strategies for Enhancing Athletic Performance",
+        "author": "Jhana",
+        "date": "2024-07-22",
+        "summary": "Learn how sports science and biomechanical analysis can help you reach your peak potential, prevent injuries, and achieve your goals.",
+        "content": "For athletes, peak performance is a combination of strength, technique, and mental focus. Our sport science services utilize biomechanical analysis to identify inefficiencies in your movement, allowing us to create training programs that enhance your power and endurance. We also focus on injury prevention and recovery strategies, because staying healthy is just as important as training hard."
+      },
+      {
+        "id": "managing-chronic-pain-through-movement",
+        "title": "Managing Chronic Pain Through Movement",
+        "author": "Nicole",
+        "date": "2024-08-01",
+        "summary": "Discover how biokinetics offers an effective, non-invasive approach to managing chronic conditions and improving your overall well-being.",
+        "content": "Living with chronic pain can be debilitating, but movement is a powerful tool for managing symptoms and improving quality of life. Our chronic pain management programs are designed to gently reintroduce movement, reduce stiffness, and build strength in a controlled and supportive environment. By focusing on what you *can* do, we help you regain control and find relief."
+      }
+    ]
   }
 }

@@ -56,7 +56,7 @@ const ContactPage: React.FC = () => {
               <div className="mt-8 border-t pt-8">
                 <a
                   href={`mailto:${contact.email}`}
-                  className="bg-brand-teal text-white font-bold py-3 px-6 rounded-lg hover:bg-brand-blue transition-all duration-300 inline-block mr-4 mb-4 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                  className="bg-brand-teal text-black font-bold py-3 px-6 rounded-lg hover:bg-brand-blue transition-all duration-300 inline-block mr-4 mb-4 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                 >
                   Email Us
                 </a>
