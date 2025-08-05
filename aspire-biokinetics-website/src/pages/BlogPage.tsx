@@ -1,3 +1,5 @@
+// src/pages/BlogPage.tsx
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import data from '../data/content.json';
@@ -18,26 +20,22 @@ const BlogPage: React.FC = () => {
         </div>
         <div className="mt-16 max-w-4xl mx-auto grid md:grid-cols-1 gap-12">
           {blog.posts.map((post) => (
-            <div
+            <Link
               key={post.id}
-              className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2"
+              to={`/blog/${post.id}`}
+              className="group block bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              <h2 className="text-2xl font-bold text-brand-teal mb-2">
-                <Link to={`/blog/${post.id}`} className="hover:underline">
-                  {post.title}
-                </Link>
+              <h2 className="text-2xl font-bold text-brand-teal mb-2 group-hover:underline">
+                {post.title}
               </h2>
               <p className="text-sm text-gray-500 mb-4">
                 By {post.author} on {post.date}
               </p>
               <p className="text-gray-700 mb-6">{post.summary}</p>
-              <Link
-                to={`/blog/${post.id}`}
-                className="font-bold text-brand-teal hover:text-brand-blue transition-colors"
-              >
+              <div className="font-bold text-brand-teal group-hover:text-brand-blue transition-colors">
                 Read More &rarr;
-              </Link>
-            </div>
+              </div>
+            </Link>
           ))}
         </div>
       </div>

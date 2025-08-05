@@ -9,11 +9,13 @@ import TestimonialsPage from './pages/TestimonialsPage';
 import BlogPage from './pages/BlogPage';
 import SinglePostPage from './pages/SinglePostPage';
 import RatesPage from './pages/RatesPage';
-import PrivacyPolicyPage from './pages/PrivacyPolicyPage'; // <-- IMPORT NEW PRIVACY POLICY PAGE
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import ScrollToTop from './components/ScrollToTop'; // <-- IMPORT THE NEW COMPONENT
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop /> {/* <-- ADD THE COMPONENT HERE */}
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
@@ -24,8 +26,7 @@ const App: React.FC = () => {
           <Route path="blog" element={<BlogPage />} />
           <Route path="blog/:postId" element={<SinglePostPage />} />
           <Route path="rates" element={<RatesPage />} />
-          <Route path="privacy-policy" element={<PrivacyPolicyPage />} />{' '}
-          {/* <-- ADD PRIVACY POLICY ROUTE */}
+          <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

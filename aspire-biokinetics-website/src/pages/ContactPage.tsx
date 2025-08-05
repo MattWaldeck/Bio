@@ -19,7 +19,7 @@ const ContactPage: React.FC = () => {
 
           <div className="mt-16 grid lg:grid-cols-2 gap-12 items-start">
             {/* Contact Info */}
-            <div className="bg-white p-8 lg:p-12 rounded-lg shadow-xl">
+            <div className="bg-white p-8 lg:p-16 rounded-lg shadow-xl">
               <h3 className="text-2xl font-bold text-brand-blue mb-6">
                 Contact Details
               </h3>
