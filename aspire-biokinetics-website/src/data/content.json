@@ -38,13 +38,13 @@
     "team": [
       {
         "name": "Nicole",
-        "bio": "Nicole is a passionate biokineticist with a special interest in orthopaedic rehabilitation and chronic disease management. She believes in a holistic approach to health, empowering her patients to take control of their well-being through movement.",
+        "bio": "Nicole completed her undergraduate degree at Potchefstroom and holds two Honours degrees—one in Sport Science and one in Biokinetics. Her career journey has taken her from Namibia to Stellenbosch, and in 2025 she co-founded the practice with Jhana. She has a passion for the outdoors, running, and multisport, and has been coaching triathletes since 2018. Her areas of expertise include orthopaedic and musculoskeletal rehabilitation, athlete performance, and exercise for older adults and individuals with neurological conditions. Nicole also runs a Parkinson’s support group in the Northern Suburbs. Driven by data but always led by care, she is committed to helping every patient—from athletes to elderly clients—reach their full potential.",
         "imageUrl": "/public/nicole waldeck.jpeg"
       },
       {
         "name": "Jhana",
-        "bio": "Jhana focuses on high-performance training and sports science. With a background in competitive sports, she is dedicated to helping athletes of all levels reach their peak potential, prevent injuries, and achieve their performance goals.",
-        "imageUrl": "https://via.placeholder.com/150"
+        "bio": "Jhana is a qualified Biokineticist with a special interest in prehabilitation and the orthopaedic landscape. She has extensive experience in the South African corporate insurance space, where she worked as a medical and product development specialist for over 18 years, before returning to her passion for biokinetics. An accomplished endurance athlete, Jhana has completed the Comrades Marathon along with many other ultra-distance races. She shares the same passion for seeing people reach their full potential and is always eager to help where she can—whether it’s supporting recovery, building resilience, or preparing for life’s physical challenges.Her unique blend of corporate expertise and clinical insight allows her to approach patient care holistically, while keeping the focus on movement, strength, and long-term wellness.",
+        "imageUrl": "/public/images/Jhana.jpg"
       }
     ]
   },
