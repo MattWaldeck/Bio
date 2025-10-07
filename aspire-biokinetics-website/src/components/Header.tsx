@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; // <-- THIS LINE WAS FIXED
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import data from '../data/content.json';
 
@@ -90,13 +90,6 @@ const Header: React.FC = () => {
   return (
     <header className="bg-white/90 backdrop-blur-lg shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <Link
-          to="/"
-          className="text-2xl font-bold text-brand-blue tracking-wider"
-        >
-          ASPIRE <span className="font-light text-brand-teal">BIOKINETICS</span>
-        </Link>
-
         {/* --- DESKTOP NAVIGATION UPDATED --- */}
         <nav className="hidden md:flex items-center space-x-8 font-medium">
           {navigation.map((item) =>
